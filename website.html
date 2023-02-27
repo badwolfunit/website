@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>html</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+  <style id="compiled-css" type="text/css">
+    
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+    <h1 id="myName">Luca</h1>
+<hr>
+<p id="aboutMe"><em>I'm learning to build dynamic web pages with JavaScript and HTML!</em></p>
+<hr>
+<h2>Things I like</h2>
+<ul>
+  <li id="firstThing">Playing Roblox</li>
+  <li id="secondThing">Playing Minecraft</li>
+  <li id="thirdThing">Coding</li>
+</ul>
+
+<button id="changeList" type="button">
+  Change your list
+</button>
+<p id="g"></p>
+<hr>
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+var item1;
+var item2;
+var item3;
+document.getElementById("changeList").onclick = password;
+/* my own stuff next, shame it didnt work */
+function password() {
+  var passWord = prompt("Password")
+  if (passWord != null) {
+                document.getElementById("g").innerHTML =
+                    "Welcome " + passWord;
+            }
+  var joMama = ("Splat753");
+  if (passWord == joMama) {
+    newList();                }
+                else{
+                    alert("Incorrect Password For This Account.");
+                }
+} 
+
+function newList() {
+  item1 = prompt("Enter a new first thing: ");
+  item2 = prompt("Enter a new second thing: ");
+  item3 = prompt("Enter a new third thing: ");
+  updateList()
+}
+
+function updateList() {
+  document.getElementById("firstThing").innerHTML = item1
+  document.getElementById("secondThing").innerHTML = item2
+  document.getElementById("thirdThing").innerHTML = item3
+  
+}
+
+
+
+  </script>
+
+  <!-- <script>
+            function checkPswd() {
+                var confirmPassword = "Splat753";
+                var password = document.getElementById("pswd").value;
+                if (password == confirmPassword) {
+                     window.location="www.mywebsite.com";
+                }
+                else{
+                    alert("Incorrect Password For This Account.");
+                }
+            }
+        
+  </script> -->
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "Lvoc09m4"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
