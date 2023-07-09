@@ -71,11 +71,15 @@ function password() {
 } 
 
 function newList() {
+  var backUp = joMama
   name = prompt("Enter a name:");
   aboutme = prompt("about you");
   item1 = prompt("Enter a new first thing: ");
   item2 = prompt("Enter a new second thing: ");
   item3 = prompt("Enter a new third thing: ");
+  jomama = prompt("New pasword leave blank to keep old")
+  if (joMama = (""))
+  joMama = backUp;
   updateList()
 }
 
