@@ -28,9 +28,9 @@
 
 </head>
 <body>
-    <h1 id="myName">Luca</h1>
+    <h1 id="myName">name</h1>
 <hr>
-<p id="aboutMe"><em>I'm learning to build dynamic web pages with JavaScript and HTML!</em></p>
+<p id="aboutMe"><em>about me</em></p>
 <hr>
 <h2>Things I like</h2>
 <ul>
@@ -52,6 +52,8 @@
 var item1;
 var item2;
 var item3;
+var name;
+var aboutMe
 document.getElementById("changeList").onclick = password;
 /* my own stuff next, shame it didnt work */
 function password() {
@@ -69,6 +71,8 @@ function password() {
 } 
 
 function newList() {
+  name = prompt("Enter a name:");
+  aboutme = prompt("about you");
   item1 = prompt("Enter a new first thing: ");
   item2 = prompt("Enter a new second thing: ");
   item3 = prompt("Enter a new third thing: ");
@@ -79,7 +83,8 @@ function updateList() {
   document.getElementById("firstThing").innerHTML = item1
   document.getElementById("secondThing").innerHTML = item2
   document.getElementById("thirdThing").innerHTML = item3
-  
+  document.getElementById("myName").innerHTML = name
+  document.getElementById("aboutMe").innerHTML = aboutme
 }
 
 
