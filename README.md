@@ -6,5 +6,5 @@ Defalt password is Splat753, I recommend changing it immediately.
 The security is not very high due to the password being stored in the JavaScript.
 
 My ambitions for the project is to create a fully functional CMS.
-Free testing version at badwolfunit.github.io
+Free testing version at badwolfunit.github.io/website
 the password will be reset frequently
